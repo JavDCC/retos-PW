@@ -1,0 +1,39 @@
+/*
+Selectores CSS:
+elemento {}
+.clase {}
+#id {}
+
+Operadores CSS:
+a,b → a OR b
+a b → All 'a' descendant of a 'b'
+a>b → All 'a' son of a 'b'
+
+Propiedades CSS:
+- font
+- color
+- background
+- padding
+- margin
+- border
+*/
+
+.blue {
+    background-color: blue;
+}
+
+body {
+    background-color: green;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+#par_block {
+    background-color: red;
+}
+
+a:hover {
+    color: yellow;
+}
