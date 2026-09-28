@@ -3,6 +3,8 @@ Selectores CSS:
 elemento {}
 .clase {}
 #id {}
+elemento:pseudoclase {}
+elemento[atributo]
 
 Operadores CSS:
 a,b → a OR b
@@ -18,22 +20,79 @@ Propiedades CSS:
 - border
 */
 
-.blue {
-    background-color: blue;
-}
-
 body {
-    background-color: green;
+    background-image: url(./media/profpic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-attachment: fixed;
+    padding-top: 50px;
 }
 
-main {
-    background-color: aquamarine;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(127, 255, 212, 1);
 }
 
-#par_block {
-    background-color: red;
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(127, 255, 212, 1);
 }
 
-a:hover {
+div {
+    display: flex;
+    justify-content: center;
+}
+
+main>div {
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 123, 0.3);
+}
+
+section>* {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#profile {
+    position: sticky;
+    top: 80px;
+    flex: 0 0 30%;
+    align-items: center;
+}
+
+#info {
+    flex: 1;
+}
+
+#contacts {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+a>img {
+    width: 20px;
+    height: 20px;
+}
+
+a[href]:hover {
     color: yellow;
+}
+
+#pfp {
+    width: 100px;
+    height: 100px;
 }
