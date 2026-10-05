@@ -1,0 +1,149 @@
+/*
+Selectores CSS:
+elemento {}
+.clase {}
+#id {}
+elemento:pseudoclase {}
+elemento[atributo]
+
+Operadores CSS:
+a,b → a OR b
+a b → All 'a' descendant of a 'b'
+a>b → All 'a' son of a 'b'
+
+Propiedades CSS:
+- font
+- color
+- background
+- padding
+- margin
+- border
+*/
+
+body {
+    margin: 0;
+    background-color: #393C3E;
+    justify-self: center;
+    max-width: 780px;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+}
+
+header>img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: blue;
+}
+
+section {
+    display: grid;
+    padding: 10px 35px 5px 25px;
+    background-color: #D5E6F5;
+    width: 80%;
+    position: relative;
+}
+
+#bordertext,
+#login {
+    grid-area: 2 / 1;
+}
+
+#bordertext {
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 0px 2px;
+    background-color: #D5E6F5;
+    z-index: 1;
+    justify-self: start;
+    align-self: start;
+    transform: translateY(-120%);
+}
+
+#login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    border: 1px solid #b2b3b3;
+    padding: 10px 30px 30px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1C6087;
+    width: 20%;
+    padding: 60px 20px 0px 10px;
+}
+
+nav>a {
+    color: white;
+}
+
+a[href]:hover {
+    color: yellow;
+}
+
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        padding: 0px 0px;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    section {
+        padding: 0px 15px;
+        width: auto;
+        justify-content: center;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons {
+        padding-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-direction: row;
+        padding: 5px;
+        width: auto;
+    }
+
+}
