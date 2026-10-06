@@ -7,7 +7,7 @@ elemento:pseudoclase {}
 elemento[atributo]
 
 Operadores CSS:
-a,b → a OR b
+a,b → a AND/OR b
 a b → All 'a' descendant of a 'b'
 a>b → All 'a' son of a 'b'
 
@@ -70,7 +70,7 @@ section {
     z-index: 1;
     justify-self: start;
     align-self: start;
-    transform: translateY(-120%);
+    transform: translateY(-140%);
 }
 
 #login {
@@ -111,7 +111,6 @@ a[href]:hover {
 }
 
 @media (max-width: 600px) {
-
     header,
     main,
     footer {
@@ -145,5 +144,4 @@ a[href]:hover {
         padding: 5px;
         width: auto;
     }
-
 }

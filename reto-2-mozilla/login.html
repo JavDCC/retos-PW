@@ -4,7 +4,10 @@
 
 <head>
     <title>Reto 2 - PW</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Javier David Coroas Cintra" />
+    <meta name="description" content="Web Programming Course - Second Challenge" />
     <link href="./style.css" rel="stylesheet" media="all" />
 </head>
 
@@ -20,10 +23,14 @@
             <p id="bordertext">Entrada de datos</p>
             <div id="login">
                 <div id="inputs">
-                    <label>Nombre</label> <input type="text" />
-                    <label>CI</label> <input type="text" />
-                    <label>Contraseña</label> <input type="password" />
-                    <label>Confirmacion</label> <input type="password" />
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" autocomplete="off" />
+                    <label for="id">CI</label>
+                    <input type="text" id="id" name="id" autocomplete="off" />
+                    <label for="pw">Contraseña</label>
+                    <input type="password" id="pw" name="pw" autocomplete="off" />
+                    <label for="pw2">Confirmacion</label>
+                    <input type="password" id="pw2" name="pw2" autocomplete="off" />
                 </div>
                 <div id="buttons">
                     <button>Enviar</button>
@@ -44,7 +51,7 @@
             Empleando HTML+CSS+JS
         </p>
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
