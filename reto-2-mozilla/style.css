@@ -75,10 +75,11 @@ section {
 
 #login {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr 3fr;
     gap: 5%;
     border: 1px solid #b2b3b3;
     padding: 10px 30px 30px;
+    align-items: center;
 }
 
 #inputs {
@@ -91,6 +92,12 @@ section {
     display: flex;
     gap: 20px;
     align-items: flex-end;
+    align-self: self-end;
+}
+
+#errors {
+    white-space: pre-line;
+    text-align: center;
 }
 
 nav {
@@ -111,6 +118,7 @@ a[href]:hover {
 }
 
 @media (max-width: 600px) {
+
     header,
     main,
     footer {
@@ -129,13 +137,13 @@ a[href]:hover {
     }
 
     #login {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 
     #buttons {
-        padding-bottom: 10px;
+        grid-area: 2 / 1;
+        align-self: self-start;
     }
 
     nav {
