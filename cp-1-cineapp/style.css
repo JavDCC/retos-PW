@@ -1,0 +1,187 @@
+/*
+Selectores CSS:
+elemento {}
+.clase {}
+#id {}
+elemento:pseudoclase {}
+elemento[atributo]
+
+Operadores CSS:
+a,b → a AND/OR b
+a b → All 'a' descendant of a 'b'
+a>b → All 'a' son of a 'b'
+
+Propiedades CSS:
+- font
+- color
+- background
+- padding
+- margin
+- border
+*/
+
+body {
+    margin: 0px;
+    justify-self: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+}
+
+header,
+footer {
+    display: flex;
+    background-color: rgb(20, 35, 58);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+header *,
+footer * {
+    color: white;
+}
+
+header button {
+    background-color: blue;
+}
+
+#undertext {
+    transform: translateY(-120%);
+}
+
+header div img {
+    width: 20px;
+    height: 20px;
+}
+
+header #tally {
+    display: inline;
+}
+
+main {
+    min-width: 90%;
+    justify-self: center;
+}
+
+#top-box {
+    padding: 0% 30%;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 3fr 4fr 5fr;
+    gap: 20px;
+}
+
+#categories,
+h2 {
+    grid-area: 1 / 1;
+    gap: 2px;
+}
+
+h2 {
+    transform: translateY(100%);
+}
+
+#found {
+    gap: 5px;
+}
+
+#top-box>* {
+    display: flex;
+    align-items: center;
+}
+
+#item-box {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-self: center;
+}
+
+#item-box>p {
+    grid-area: 2 / 2;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.card img:nth-child(1) {
+    grid-area: 1 / 1;
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card img:nth-child(2) {
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: flex-start;
+    width: 20px;
+    height: 20px;
+}
+
+.card div {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+.card div * {
+    grid-area: 1 / 1;
+}
+
+.card div p {
+    transform: translateY(70%);
+}
+
+.card div p:nth-child(3) {
+    transform: translateY(110%);
+}
+
+.card div button {
+    grid-area: 2 / 1;
+}
+
+button,
+select,
+input {
+    border-radius: 6px;
+}
+
+p {
+    font-size: small;
+}
+
+span {
+    color: rgb(74, 189, 255);
+}
+
+@media (max-width: 600px) {
+    #item-box {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}

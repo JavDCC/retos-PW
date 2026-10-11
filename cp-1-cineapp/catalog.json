@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "The Matrix",
+        "year": 1999,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=The+Matrix"
+    },
+    {
+        "id": 2,
+        "title": "Inception",
+        "year": 2010,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=Inception"
+    },
+    {
+        "id": 3,
+        "title": "Interstellar",
+        "year": 2014,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=Interstellar"
+    },
+    {
+        "id": 4,
+        "title": "The Matrix Reloaded",
+        "year": 2003,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=The+Matrix+Reloaded"
+    },
+    {
+        "id": 5,
+        "title": "The Matrix Revolutions",
+        "year": 2003,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=The+Matrix+Revolutions"
+    },
+    {
+        "id": 6,
+        "title": "The Matrix Resurrections",
+        "year": 2021,
+        "genre": "Ciencia ficción",
+        "image": "https://placehold.co/600x400/102a43/ffffff?text=The+Matrix+Resurrections"
+    }
+]

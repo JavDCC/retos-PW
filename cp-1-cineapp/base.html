@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CP1 - PW</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Javier David Coroas Cintra" />
+    <meta name="description" content="Web Programming Course - First Exercise" />
+    <link href="./style.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Cine<span>App</span></h1>
+            <p id="undertext">Tus películas favoritas, siempre a mano</p>
+        </div>
+
+        <div>
+            <input type="search" placeholder="Buscar películas..." />
+            <button>Buscar</button>
+        </div>
+
+        <div>
+            <img src="./media/tally-star.jpg" alt="*" />
+            <p id="tally">#</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="top-box">
+            <div id="categories">
+                <button>Todas</button>
+                <button>Favoritas</button>
+            </div>
+
+            <div id="found">
+                <p id="tally">#</p>
+                <p>películas encontradas</p>
+            </div>
+
+            <div id="order">
+                <p>Ordenar por:</p>
+                <select>
+                    <option>Más recientes</option>
+                    <option>Alfabéticamente</option>
+                </select>
+            </div>
+
+            <h2>Películas</h2>
+        </div>
+
+        <div id="item-box">
+            <p>No se han encontrado películas :(</p>
+            <!-- <div class="card">
+                <img src="" alt="poster" />
+                <img src="./media/item-star-off.jpg" alt="*" />
+                <div>
+                    <h3>Name</h3>
+                    <p>Year</p>
+                    <p>Genre(s)</p>
+                    <button>* Agregar a favoritos</button>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <footer>
+        <p>CineApp <span>|</span> Disfruta, guarda y revive tus películas favoritas</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
